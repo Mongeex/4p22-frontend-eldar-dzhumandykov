@@ -1,0 +1,50 @@
+table {
+    table-layout: fixed;
+    width:100%
+}
+th {
+    border: 1px solid black; 
+    border-radius: 10%; 
+    width: 60px;
+    height: 60px;
+    word-wrap:break-word;
+    background-color: #e7e7e7; 
+}
+td {
+    border: 1px solid black;  
+    border-radius: 10%; 
+    width: 60px;
+    height: 60px;
+    word-wrap:break-word;
+    text-align: center;
+}
+.am {
+    background-color: hwb(335 0% 0% / 0.993);
+}
+.aem {
+    background-color: #ffdfc4;
+}
+.tm {
+    background-color: pink;
+}
+.onm {
+    background-color: rgb(149, 255, 149);
+}
+.nm {
+    background-color: rgb(96, 184, 255);
+}
+.h {
+    background-color: rgb(255, 255, 134);
+}
+.sm {
+    background-color: #cccc99;
+}
+.ptm {
+    background-color: #cccccc;
+}
+.l {
+    background-color: #ffbfff;
+}
+.ac {
+    background-color: #ef99cc;
+}
