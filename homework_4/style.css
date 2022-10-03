@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Oswald"
+}
+
+header {
+    display:block;
+    height:100px;
+    box-shadow: 0 5px 5px #ccc;
+    text-align:center;
+    color:cadetblue;
+    padding-top:5px
+}
+header:hover{
+    color:rgb(0, 130, 134)
+}
+
+footer {
+    display:block;
+    background-color: rgb(95,158,160,0.5);
+    height:150px;
+    text-align: center;
+    padding-top:40px
+}
+footer:hover {
+    color:cadetblue;
+}
+
+.goods {    
+    display: flex;    
+    flex-wrap: wrap;    
+    row-gap: 30px;    
+    column-gap: 25px;
+    padding: 5% 5% 5% 5%;
+}
+
+.goods_old_price {
+    color: grey;
+    text-decoration: line-through;
+    font-size: 14px; 
+}
+
+.container {
+    display:block;
+    width:350px;
+    height:600px;
+    border:1px solid lightgray;
+    border-radius:1%;
+    text-align: center;
+    background-color: white;
+    margin-bottom:100px;
+}
+
+.container_page {
+    color:black;
+    text-decoration: none; 
+}
+
+.container_page:hover {
+    color:slateblue
+}
+
+.guitar {
+    height:100%;
+    padding:35px;
+}
+
+.add_to_cart {
+    color:black;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.add_to_cart:hover {
+    color:slateblue;
+}
