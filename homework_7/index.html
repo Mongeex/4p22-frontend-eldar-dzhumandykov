@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Log in form</title>
+</head>
+<body>
+    <div class="login-form">
+        <h1 class="login-form__name">Вход</h1>
+        <form class="login-form__form" action="">
+            <label for="email" class="form-label__email">Email</label>
+            <input class="login-form__email" type="email" name="email" placeholder="Введите email" id="email" required>
+            <label for="password" class="form-label__password">Password</label>
+            <input class="login-form__password" type="password" name="password" placeholder="Введите пароль" id="password" required>
+            <div class="form-subscription__container">
+                <input class="form-subsctiption__input" type="checkbox" name="subscription" id="subscription" value="sub agree">
+                <label for="subscription" class="form-subsctiption__label">Я согласен получать обновления на почту</label>
+            </div>
+            <button class="login-form__submit" type="submit">Войти</button>
+        </form>    
+    </div>
+</body>
+</html>

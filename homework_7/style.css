@@ -1,0 +1,287 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin:0;
+    padding:0;
+    font-family: 'Roboto', sans-serif;
+    background: #1B2473;
+}
+
+input:focus {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+input::placeholder {
+    color: #CCCCCC;
+}
+
+.login-form {
+    margin:10vw auto;
+    text-align:center;
+    width:calc(600 / 1440 * 100vw);
+    height:calc(412 / 1440 * 100vw);
+    background: #FFFFFF;
+    border-radius:calc(20 / 1440 * 100vw);
+    box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.25);
+}
+
+.login-form__name {
+    margin:0 auto;
+    padding-top:calc(26 / 1440 * 100vw);
+    font-size:calc(50 / 1440 * 100vw);
+    line-height:calc(50 / 1440 * 100vw);
+    color:#787878;
+}
+
+.form-label__email {
+    display:block;
+    font-weight: 700;
+    text-align:start;
+    font-size:calc(16 / 1440 * 100vw);
+    line-height:calc(16 / 1440 * 100vw);
+    margin-top:calc(15 / 1440 * 100vw);
+    margin-left:calc(53 / 1440 * 100vw);
+    margin-bottom:calc(2 / 1440 * 100vw);
+    color: #787878
+}
+
+.login-form__email {
+    display:block;
+    width: calc(509 / 1440 * 100vw);
+    height: calc(49 / 1440 * 100vw);
+    background: #FFFFFF;
+    border:calc(2 / 1440 * 100vw) solid #787878;
+    border-radius:calc(10 / 1440 * 100vw);
+    font-style: normal;
+    font-weight: 700;
+    font-size: calc(28 / 1440 * 100vw);
+    color: #787878; 
+    padding-left:calc(15 / 1440 * 100vw);
+    margin:0px auto calc(24 / 1440 * 100vw);
+}
+
+.form-label__password {
+    display:block;
+    font-weight: 700;
+    text-align:start;
+    font-size:calc(16 / 1440 * 100vw);
+    line-height:calc(16 / 1440 * 100vw);
+    margin-left:calc(53 / 1440 * 100vw);
+    margin-bottom:calc(2 / 1440 * 100vw);
+    color: #787878
+}
+
+.login-form__password {
+    display:block;
+    width:calc(509 / 1440 * 100vw);
+    height:calc(49 / 1440 * 100vw);
+    background: #FFFFFF;
+    border:calc(2 / 1440 * 100vw) solid #787878;
+    border-radius:calc(10 / 1440 * 100vw);
+    font-style: normal;
+    font-weight: 700;
+    font-size:calc(28 / 1440 * 100vw);
+    color: #787878;
+    padding-left:calc(15 / 1440 * 100vw);
+    margin:0 auto;
+}
+
+.form-subscription__container {
+    text-align: left;
+    margin-top:calc(16 / 1440 * 100vw);
+    margin-left:calc(45 / 1440 * 100vw);
+}
+
+.form-subsctiption__input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.form-subsctiption__input+label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+}
+
+.form-subsctiption__input+label::before {
+    content: '';
+    display: inline-block;
+    width: calc(24 / 1440 * 100vw);
+    height: calc(24 / 1440 * 100vw);
+    border:calc(2 / 1440 * 100vw) solid #787878;
+    border-radius:calc(7 / 1440 * 100vw);
+    margin-right:calc(10 / 1440 * 100vw);
+}
+
+.form-subsctiption__input:checked+label::before {
+    background-image:url(https://www.pngall.com/wp-content/uploads/8/Check-Mark.png);
+    background-size: calc(24 / 1440 * 100vw);
+    background-repeat:no-repeat;
+}
+
+.form-subsctiption__input:hover+label::before, .form-subsctiption__input:focus+label::before {
+    box-shadow:0px 0px 40px 3px rgba(0, 0, 0, 0.25);
+}
+.form-subsctiption__label {
+    font-weight: 400;
+    font-size:calc(14 / 1440 * 100vw);
+    line-height:calc(16 / 1440 * 100vw);
+    color: #787878;
+}
+
+.login-form__submit {
+    display:inline-block;
+    width:calc(180 / 1440 * 100vw);
+    height:calc(52 / 1440 * 100vw);
+    font-size:calc(24 / 1440 * 100vw);
+    font-weight: 700;
+    line-height:calc(16 / 1440 * 100vw);
+    color: #ffffff;
+    background: #1A226B;
+    border-radius:calc(10 / 1440 * 100vw);
+    margin-top:calc(26 / 1440 * 100vw);
+}
+
+.login-form__submit:hover, .login-form__submit:focus {
+    box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.25);
+}
+
+@media screen and (max-width: 768px) {
+.login-form {
+    margin:3vw auto;
+    text-align:center;
+    width:calc(728 / 768 * 100vw);
+    height:calc(697 / 768 * 100vw);
+    background: #FFFFFF;
+    border-radius:calc(20 / 768 * 100vw);
+    box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.25);
+}
+
+.login-form__name {
+    margin:0 auto;
+    padding-top:calc(38 / 768 * 100vw);
+    font-size:calc(60 / 768 * 100vw);
+    line-height:calc(50 / 768 * 100vw);
+    color:#787878;
+}
+    
+.form-label__email {
+    display:block;
+    font-weight: 700;
+    line-height:calc(16 / 768 * 100vw);
+    text-align:start;
+    font-size:calc(24 / 768 * 100vw);
+    margin-top:calc(13 / 768 * 100vw);
+    margin-left:calc(53 / 768 * 100vw);
+    margin-bottom:calc(8 / 768 * 100vw);
+    color: #787878;
+}
+    
+.login-form__email {
+    display:block;
+    width: calc(638 / 768 * 100vw);
+    height: calc(49 / 768 * 100vw);
+    background: #FFFFFF;
+    border:2px solid #787878;
+    border-radius:calc(10 / 768 * 100vw);
+    font-style: normal;
+    font-weight: 700;
+    font-size: calc(28 / 768 * 100vw);
+    line-height:calc(16 / 768 * 100vw);
+    color: #787878; 
+    padding-left:calc(15 / 768 * 100vw);
+    margin:0px auto calc(13 / 768 * 100vw);
+}
+    
+.form-label__password {
+    display:block;
+    font-weight: 700;
+    text-align:start;
+    font-size:calc(24 / 768 * 100vw);
+    line-height:calc(16 / 768 * 100vw);
+    margin-left:calc(53 / 768 * 100vw);
+    margin-bottom:calc(8 / 768 * 100vw);
+    color: #787878
+}
+    
+.login-form__password {
+    display:block;
+    width:calc(638 / 768 * 100vw);
+    height:calc(49 / 768 * 100vw);
+    background: #FFFFFF;
+    border:2px solid #787878;
+    border-radius:calc(10 / 768 * 100vw);
+    font-style: normal;
+    font-weight: 700;
+    font-size:calc(28 / 768 * 100vw);
+    color: #787878;
+    padding-left:calc(15 / 768 * 100vw);
+    margin:0 auto;
+}
+    
+.form-subscription__container {
+    text-align: left;
+    margin-top:calc(19 / 768 * 100vw);
+    margin-left:calc(45 / 768 * 100vw);
+}
+
+.form-subsctiption__input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.form-subsctiption__input+label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+}
+
+.form-subsctiption__input+label::before {
+    content: '';
+    display: inline-block;
+    width: calc(32 / 768 * 100vw);
+    height: calc(32 / 768 * 100vw);
+    border:2px solid #787878;
+    border-radius:calc(7 / 768 * 100vw);
+    margin-right:calc(10 / 768 * 100vw);
+}
+
+.form-subsctiption__input:checked+label::before {
+    background-image:url(https://www.pngall.com/wp-content/uploads/8/Check-Mark.png);
+    background-size: calc(32 / 768 * 100vw);
+    background-repeat:no-repeat;
+}
+
+.form-subsctiption__input:hover+label::before, .form-subsctiption__input:focus+label::before {
+    box-shadow:0px 0px 40px 3px rgba(0, 0, 0, 0.25);
+}
+
+.form-subsctiption__label {
+    font-weight: 400;
+    font-size:calc(18 / 768 * 100vw);
+    line-height:calc(16 / 1440 * 100vw);
+    color: #787878;
+}
+
+.login-form__submit {
+    display:inline-block;
+    width:calc(220 / 768 * 100vw);
+    height:calc(80 / 768 * 100vw);
+    font-size:calc(32 / 768 * 100vw);
+    font-weight: 700;
+    line-height:calc(16 / 1440 * 100vw);
+    color: #ffffff;
+    background: #1A226B;
+    border-radius:calc(10 / 768 * 100vw);
+    margin-top:calc(64 / 768 * 100vw);
+}
+
+.login-form__submit:hover, .login-form__submit:focus {
+    box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.25);
+}
+
+}
