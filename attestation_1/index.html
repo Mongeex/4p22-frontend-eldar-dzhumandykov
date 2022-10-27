@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Log in form</title>
+</head>
+<body>
+    <header class="header">
+        <img src="./images/IU_logo.png" class="header__logo">
+        <div class="header__title">
+            PCS Frontend
+        </div>
+        <div class="header__links">
+            <a href="reg.html" class="header__registration">Регистрация</a>
+            <a href="index.html" class="header__login">Вход</a>
+        </div>
+    </header>
+    <main class="main">
+    <div class="main-container">
+        <h1 class="main-container__title">Вход</h1>
+        <form class="main-container__form" action="">
+            <label class="container-form__label-email" for="email">Email</label>
+            <input class="container-form__input-email" type="email" name="email" placeholder="Введите email" id="email" required>
+            <label class="container-form__label-password" for="password">Password</label>
+            <input class="container-form__input-password" type="password" name="password" placeholder="Введите пароль" id="password" required>
+            <button class="main-container__button" type="submit">Войти</button>
+        </form>    
+    </div>
+    </main>
+</body>
+</html>
