@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">    	
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Калькулятор</title>
+</head>
+<body>
+    <div class="main-container">
+        <h1 class="main-container__title">Калькулятор</h1>
+        <label for="num1" class="main-container__label">Первое число</label>
+        <input class="main-container__input" type="text" placeholder="Число" id="num1">
+        <label for="operation" class="main-container__label">Операция</label>
+        <input class="main-container__input" type="text" placeholder="Операция (+  -  *  /)" id="operation">
+        <label for="num2" class="main-container__label">Второе число</label>
+        <input class="main-container__input" type="text" placeholder="Число" id="num2">
+        <button class="main-container__button" type="text" onclick="calculate()" id="button">Считать</button>
+        <div class="main-container__result" type="text" id="resultForm"></div> 
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
